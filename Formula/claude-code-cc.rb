@@ -1,8 +1,8 @@
 class ClaudeCodeCc < Formula
   desc "Switch between multiple authenticated Claude Code accounts"
   homepage "https://github.com/stevearagonsite/claude-code-cc"
-  url "https://github.com/stevearagonsite/claude-code-cc/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "355288e94fe30fd06f037cbda00aa050a839f0225c3b89e1afcabe70bf19f4c2"
+  url "https://github.com/stevearagonsite/claude-code-cc/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "c18aa9802cfb7b8d92b40195703d45094486dbcba74687ddcc54b79e9b6cccec"
   license "MIT"
 
   # Credentials are read from and written to the macOS Keychain via `security`.
