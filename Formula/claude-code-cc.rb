@@ -1,8 +1,8 @@
 class ClaudeCodeCc < Formula
   desc "Switch between multiple authenticated Claude Code accounts"
   homepage "https://github.com/stevearagonsite/claude-code-cc"
-  url "https://github.com/stevearagonsite/claude-code-cc/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "79b961bfdebbdc2731f98da71a392a78e6eeda06badf6b10b2a720e571229cb3"
+  url "https://github.com/stevearagonsite/claude-code-cc/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "4945e729e32cd33af3f39abf0fb8ae5091fd8ccc86dd3cd5ff98b7f36a0c959a"
   license "MIT"
 
   # Credentials are read from and written to the macOS Keychain via `security`.
@@ -25,9 +25,9 @@ class ClaudeCodeCc < Formula
         source "#{opt_pkgshare}/cc.zsh"
 
       Then open a new shell and run:
-        cc -a work     # create a profile by cloning your current session
-        cc -p work     # switch to it, then run /login with the other account
-        cc -l          # see what's left on each account
+        cc add work    # create a profile by cloning your current session
+        cc use work    # switch to it, then run /login with the other account
+        cc list        # see what's left on each account
 
       Optional Claude Code skill:
         ln -s "#{opt_pkgshare}/skills/claude-profiles" ~/.claude/skills/claude-profiles
