@@ -13,7 +13,7 @@ class ClaudeCodeCc < Formula
     # Only cc-profiles goes on the PATH. `cc` itself is a zsh function, sourced
     # by the user — installing a binary named `cc` would shadow the C compiler.
     inreplace "bin/cc-profiles", "#!/usr/bin/env python3",
-              "#!#{Formula["python@3.13"].opt_bin}/python3.13"
+              "#!#{formula_opt_bin("python@3.13")}/python3.13"
     bin.install "bin/cc-profiles"
     pkgshare.install "cc.zsh"
     pkgshare.install "skills"
