@@ -1,8 +1,8 @@
 class ClaudeCodeCc < Formula
   desc "Switch between multiple authenticated Claude Code accounts"
   homepage "https://github.com/stevearagonsite/claude-code-cc"
-  url "https://github.com/stevearagonsite/claude-code-cc/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "f7e18880134be20709ad00e2a59bc28f08cc7e9deaab1db01ed43d84d2ebe819"
+  url "https://github.com/stevearagonsite/claude-code-cc/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "355288e94fe30fd06f037cbda00aa050a839f0225c3b89e1afcabe70bf19f4c2"
   license "MIT"
 
   # Credentials are read from and written to the macOS Keychain via `security`.
@@ -21,7 +21,8 @@ class ClaudeCodeCc < Formula
 
   def caveats
     <<~EOS
-      Add this line to your ~/.zshrc:
+      Add this line to your ~/.zshenv (not .zshrc, so it also
+      works in Claude Code's `!` prompt):
         source "#{opt_pkgshare}/cc.zsh"
 
       Then open a new shell and run:
